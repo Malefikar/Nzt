@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.less","style.css"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF","file":"style.css","sourcesContent":["p {\r\n  color: red;\r\n  font-size: 42px;\r\n}","p {\n  color: red;\n  font-size: 42px;\n}\n"]}
