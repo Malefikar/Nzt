@@ -23,76 +23,76 @@
 
   </svg>
 
-  <header class="main-header">
-    <div class="container">
-      <nav class="main-nav">
-        <svg class="main-nav__logo" width="145" height="40">
-          <use xlink:href="#main-nav-logo"></use>
-        </svg>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--selected main-nav__item--doctor">
-            Врачу
-            <svg class="main-nav__arrow main-nav__arrow--first" width="15" height="22" onclick="dropOne()">
-              <use xlink:href="#arrow"></use>
-            </svg>
-            <div id="myDropdown1" class="dropdown-content">
-              <ul class="dropdown-content__list">
-                <li class="dropdown-content__item">Материалы для изучения</li>
-                <li class="dropdown-content__item">Мнения специалистов</li>
-                <li class="dropdown-content__item">Обучение</li>
-                <li class="dropdown-content__item">Эффективность и безопасность</li>
-                <li class="dropdown-content__item">Информированное согласие</li>
-                <li class="dropdown-content__item">Исследования и публикации</li>
-                <li class="dropdown-content__item">Вопрос/Ответ</li>
-                <li class="dropdown-content__item">Дистрибьюторы</li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item main-nav__item--selected main-nav__item--patient">
-            Пациенту
-            <svg class="main-nav__arrow main-nav__arrow--second" width="15" height="22" onclick="dropTwo()">
-              <use xlink:href="#arrow"></use>
-            </svg>
-            <div id="myDropdown2" class="dropdown-content">
-              <ul class="dropdown-content__list">
-                <li class="dropdown-content__item">Эффективность и безопасность</li>
-                <li class="dropdown-content__item">Мнения специалистов</li>
-                <li class="dropdown-content__item">Просто о сложном</li>
-                <li class="dropdown-content__item">Вопрос/Ответ </li>
-                <li class="dropdown-content__item">Клиники</li>
-                <li class="dropdown-content__item">Аптеки</li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item main-nav__item--selected main-nav__item--pills">
-            О препарате
-            <svg class="main-nav__arrow main-nav__arrow--third" width="15" height="22" onclick="dropThree()">
-              <use xlink:href="#arrow"></use>
-            </svg>
-            <div id="myDropdown3" class="dropdown-content">
-              <ul class="dropdown-content__list">
-                <li class="dropdown-content__item">История</li>
-                <li class="dropdown-content__item">Механизм действияв</li>
-                <li class="dropdown-content__item">Состав препарата</li>
-                <li class="dropdown-content__item">Регистрационное удостоверение</li>
-                <li class="dropdown-content__item">Инструкция</li>
-                <li class="dropdown-content__item">Технология производства</li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item">Журнал</li>
-          <li class="main-nav__item">Контакты</li>
-          <li class="main-nav__item main-nav__item--search">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.3333 17.4998L14.595 13.7548L18.3333 17.4998ZM16.6667 8.74984C16.6667 10.6285 15.9204 12.4301 14.592 13.7585C13.2636 15.0869 11.462 15.8332 9.58333 15.8332C7.70472 15.8332 5.90304 15.0869 4.57466 13.7585C3.24628 12.4301 2.5 10.6285 2.5 8.74984C2.5 6.87122 3.24628 5.06955 4.57466 3.74116C5.90304 2.41278 7.70472 1.6665 9.58333 1.6665C11.462 1.6665 13.2636 2.41278 14.592 3.74116C15.9204 5.06955 16.6667 6.87122 16.6667 8.74984V8.74984Z"
-                stroke="#FDFDFD" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </li>
-        </ul>
-        <button class="main-nav__button main-nav__button--check" type="button">Проверить оригинальность</button>
-        <button class="main-nav__button main-nav__button--buy" type="button">Купить</button>
-      </nav>
+  <header class="main-header" id="container">
+    <div class="main-header__container">
+        <nav class="main-nav" id="myHeader">
+          <svg class="main-nav__logo" width="145" height="40">
+            <use xlink:href="#main-nav-logo"></use>
+          </svg>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--selected main-nav__item--doctor">
+              Врачу
+              <svg class="main-nav__arrow main-nav__arrow--first" width="15" height="22">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <div id="myDropdown1" class="dropdown-content">
+                <ul class="dropdown-content__list">
+                  <li class="dropdown-content__item">Материалы для изучения</li>
+                  <li class="dropdown-content__item">Мнения специалистов</li>
+                  <li class="dropdown-content__item">Обучение</li>
+                  <li class="dropdown-content__item">Эффективность и безопасность</li>
+                  <li class="dropdown-content__item">Информированное согласие</li>
+                  <li class="dropdown-content__item">Исследования и публикации</li>
+                  <li class="dropdown-content__item">Вопрос/Ответ</li>
+                  <li class="dropdown-content__item">Дистрибьюторы</li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--selected">
+              Пациенту
+              <svg class="main-nav__arrow main-nav__arrow--second" width="15" height="22">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <div id="myDropdown2" class="dropdown-content dropdown-content--second">
+                <ul class="dropdown-content__list">
+                  <li class="dropdown-content__item">Эффективность и безопасность</li>
+                  <li class="dropdown-content__item">Мнения специалистов</li>
+                  <li class="dropdown-content__item">Просто о сложном</li>
+                  <li class="dropdown-content__item">Вопрос/Ответ </li>
+                  <li class="dropdown-content__item">Клиники</li>
+                  <li class="dropdown-content__item">Аптеки</li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--selected main-nav__item--pills">
+              О препарате
+              <svg class="main-nav__arrow main-nav__arrow--third" width="15" height="22">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <div id="myDropdown3" class="dropdown-content dropdown-content--third">
+                <ul class="dropdown-content__list">
+                  <li class="dropdown-content__item">История</li>
+                  <li class="dropdown-content__item">Механизм действия</li>
+                  <li class="dropdown-content__item">Состав препарата</li>
+                  <li class="dropdown-content__item">Регистрационное удостоверение</li>
+                  <li class="dropdown-content__item">Инструкция</li>
+                  <li class="dropdown-content__item">Технология производства</li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item">Журнал</li>
+            <li class="main-nav__item">Контакты</li>
+            <li class="main-nav__item main-nav__item--search">
+              <svg class="main-nav__search" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.3333 17.4998L14.595 13.7548L18.3333 17.4998ZM16.6667 8.74984C16.6667 10.6285 15.9204 12.4301 14.592 13.7585C13.2636 15.0869 11.462 15.8332 9.58333 15.8332C7.70472 15.8332 5.90304 15.0869 4.57466 13.7585C3.24628 12.4301 2.5 10.6285 2.5 8.74984C2.5 6.87122 3.24628 5.06955 4.57466 3.74116C5.90304 2.41278 7.70472 1.6665 9.58333 1.6665C11.462 1.6665 13.2636 2.41278 14.592 3.74116C15.9204 5.06955 16.6667 6.87122 16.6667 8.74984V8.74984Z"
+                   stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </li>
+          </ul>
+          <button class="main-nav__button main-nav__button--check" type="button">Проверить оригинальность</button>
+          <button class="main-nav__button main-nav__button--buy" type="button">Купить</button>
+        </nav>
 
       <h1 class="main-header__title">Путь к богатству и могуществу</h1>
       <p class="main-header__text">
@@ -104,193 +104,203 @@
     </div>
   </header>
 
-  <main class="main container">
-    <section class="links">
-      <h2 class="links__tittle visually-hidden">Полезные ссылки</h2>
-      <ul class="links__list">
-        <li class="links__item">
-          История
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="links__item">
-          Технология производства
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="links__item">
-          Инструкция
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="links__item">
-          Состав препарата
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="links__item">
-          Механизм действия
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="links__item">
-          Рег. удостоверение
-          <svg class="links__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-      </ul>
-    </section>
-
-    <section class="about">
-      <h2 class="about__title">Препарат NZT-48</h2>
-      <p class="about__description">Действует на&nbsp;клеточном уровне, улучшая метаболизм клеток и&nbsp;восстанавливая
-        их&nbsp;нормальные функции.</p>
-      <p class="about__description">Благодаря этому достигается широчайший спектр медицинских показаний
-        и&nbsp;становится возможным применение в&nbsp;самых разных областях медицины.</p>
-
-      <ul class="about__list">
-        <li class="about__item">
-          <h3 class="about__header">Эффективность</h3>
-          <p class="about__text">Доказана многочисленными клиническими и&nbsp;лабораторными исследованиями</p>
-          <svg class="about__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="about__item">
-          <h3 class="about__header">Безопасность</h3>
-          <p class="about__text">Не&nbsp;содержит гормонов, ферментов, витаминов и&nbsp;других биогенных стимуляторов
-          </p>
-          <svg class="about__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="about__item">
-          <h3 class="about__header">Высокие технологии</h3>
-          <p class="about__text">При производстве используются самые передовые технологии отбора, хранения
-            и&nbsp;очистки</p>
-          <svg class="about__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="about__item">
-          <h3 class="about__header">Уникальный состав</h3>
-          <p class="about__text">Сбалансированный состав биомолекул, так как соотношение компонентов создано природой,
-            характерно для здоровой ткани и&nbsp;не&nbsp;просто стопроцентно усваивается,
-            а&nbsp;встраивается в&nbsp;собственный метаболизм пациента</p>
-          <svg class="about__arrow" width="15" height="22">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-      </ul>
-    </section>
-
-    <section class="notes">
-        <div class="notes__buttons">
-          <button class="notes__button notes__button--left" type="button">
-            <svg class="notes__arrow" width="22" height="22">
+  <div class="container">
+    <main class="main">
+      <section class="links">
+        <h2 class="links__tittle visually-hidden">Полезные ссылки</h2>
+        <ul class="links__list">
+          <li class="links__item">
+            История
+            <svg class="links__arrow" width="15" height="22">
               <use xlink:href="#arrow"></use>
             </svg>
-          </button>
-          <button class="notes__button notes__button--right" type="button">
-            <svg class="notes__arrow" width="22" height="22">
-              <use xlink:href="#arrow"></use>
-            </svg>
-          </button>
-        </div>
-      <ul class="notes__list">
-        <li class="notes__item notes__item--first">
-          <img class="notes__image" src="img/notes-1.jpg" alt="Эдди удивлён" width="880" height="550">
-          <div class="notes__text-wrapper">
-            <p class="notes__description">Что это за&nbsp;таблетка?! Я&nbsp;был предельно собран. Я&nbsp;не&nbsp;курил
-              уже 6&nbsp;часов, я&nbsp;не&nbsp;ел.</p>
-            <p class="notes__date">5 апреля</p>
-            <p class="notes__link">
-              О NZT-48
-              <svg class="notes__arrow-list" width="15" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </p>
-          </div>
-        </li>
-        <li class="notes__item notes__item--second">
-          <img class="notes__image" src="img/notes-2.jpg" alt="Эдди не удивлён" width="880" height="550">
-          <div class="notes__text-wrapper">
-            <p class="notes__description">Я&nbsp;был таким воздержанным и&nbsp;чистым... Что это? Лекарство для тех, кто
-              заботиться о&nbsp;банальной чистоте? Я&nbsp;не&nbsp;был обкурен, я&nbsp;не&nbsp;был пьян, я&nbsp;был
-              чистым!</p>
-            <p class="notes__date">17 апреля</p>
-            <p class="notes__link">
-              О побочных
-              <svg class="notes__arrow-list" width="15" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="opinions">
-      <h2 class="opinions__title">Мы&nbsp;изучаем и&nbsp;принимаем во внимание
-       <br>все мнения ведущих специалистов отрасли</h2>
-        <div class="opinions__wrapper">
-          <div class="opinions__buttons">
-            <button class="opinions__button opinions__button--left" type="button">
-              <svg class="opinions__arrow" width="22" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </button>
-            <button class="opinions__button opinions__button--right" type="button">
-              <svg class="opinions__arrow" width="22" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </button>
-          </div>
-          <p class="opinions__text">Мнения специалистов</p>
-        </div>
-        <ul class="opinions__list">
-          <li class="opinions__item opinions__item--first">
-            <p class="opinions__header">
-              Эдди<br>морро
-              <img class="opinions__image" src="img/opinions.png" alt="Эдди" width="89" height="89">
-            </p>
-            <p class="opinions__merit">Сенатор, заслуженный деятель науки РФ, профессор, доктор медицинских наук, руководитель отдела патоморфологии ФГБНУ «НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
-            <p class="opinions__description">Правовое государство фактически интегрирует культ личности. Социализм,
-              на первый взгляд, заставляет бесцветный культ личности.</p>
-            <p class="opinions__link">
-              Смотреть видео
-              <svg class="opinions__arrow-link" width="15" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </p>
           </li>
-          <li class="opinions__item opinions__item--second">
-            <p class="opinions__header">
-              Эдди<br>морро
-              <img class="opinions__image" src="img/opinions.png" alt="Эдди" width="89" height="89">
-            </p>
-            <p class="opinions__merit">Сенатор, заслуженный деятель науки РФ, профессор, доктор медицинских наук, руководитель отдела патоморфологии ФГБНУ «НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
-            <p class="opinions__description">Правовое государство фактически интегрирует культ личности. Социализм,
-              на первый взгляд, заставляет бесцветный культ личности.</p>
-            <p class="opinions__link">
-              Смотреть видео
-              <svg class="opinions__arrow-link" width="15" height="22">
-                <use xlink:href="#arrow"></use>
-              </svg>
-            </p>
+          <li class="links__item">
+            Технология производства
+            <svg class="links__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="links__item">
+            Инструкция
+            <svg class="links__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="links__item">
+            Состав препарата
+            <svg class="links__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="links__item">
+            Механизм действия
+            <svg class="links__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="links__item">
+            Рег. удостоверение
+            <svg class="links__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
           </li>
         </ul>
-    </section>
+      </section>
+      <section class="about">
+        <h2 class="about__title">Препарат NZT-48</h2>
+        <p class="about__description">Действует на&nbsp;клеточном уровне, улучшая метаболизм клеток и&nbsp;восстанавливая
+          их&nbsp;нормальные функции.</p>
+        <p class="about__description">Благодаря этому достигается широчайший спектр медицинских показаний
+          и&nbsp;становится возможным применение в&nbsp;самых разных областях медицины.</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <h3 class="about__header">Эффективность</h3>
+            <p class="about__text">Доказана многочисленными клиническими и&nbsp;лабораторными исследованиями</p>
+            <svg class="about__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <h3 class="about__header">Безопасность</h3>
+            <p class="about__text">Не&nbsp;содержит гормонов, ферментов, витаминов и&nbsp;других биогенных стимуляторов
+            </p>
+            <svg class="about__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <h3 class="about__header">Высокие технологии</h3>
+            <p class="about__text">При производстве используются самые передовые технологии отбора, хранения
+              и&nbsp;очистки</p>
+            <svg class="about__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <h3 class="about__header">Уникальный состав</h3>
+            <p class="about__text">Сбалансированный состав биомолекул, так как соотношение компонентов создано природой,
+              характерно для здоровой ткани и&nbsp;не&nbsp;просто стопроцентно усваивается,
+              а&nbsp;встраивается в&nbsp;собственный метаболизм пациента</p>
+            <svg class="about__arrow" width="15" height="22">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="notes">
+        <h2 class="visually-hidden">Реакция Эдди</h2>
+          <div class="notes__buttons">
+            <button class="notes__button notes__button--left" type="button">
+              <svg class="notes__arrow" width="22" height="22">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <button class="notes__button notes__button--right" type="button">
+              <svg class="notes__arrow" width="22" height="22">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        <ul class="notes__list" id="notes__list">
+          <li class="notes__item notes__item--first">
+            <img class="notes__image" src="img/notes-1.jpg" alt="Эдди удивлён" width="880" height="550">
+            <div class="notes__text-wrapper">
+              <p class="notes__description">Что это за&nbsp;таблетка?! Я&nbsp;был предельно собран. Я&nbsp;не&nbsp;курил
+                уже 6&nbsp;часов, я&nbsp;не&nbsp;ел.</p>
+              <p class="notes__date">5 апреля</p>
+              <p class="notes__link">
+                О NZT-48
+                <svg class="notes__arrow-list" width="15" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </p>
+            </div>
+          </li>
+          <li class="notes__item notes__item--second">
+            <img class="notes__image" src="img/notes-2.jpg" alt="Эдди не удивлён" width="880" height="550">
+            <div class="notes__text-wrapper">
+              <p class="notes__description">Я&nbsp;был таким воздержанным и&nbsp;чистым... Что это? Лекарство для тех, кто
+                заботиться о&nbsp;банальной чистоте? Я&nbsp;не&nbsp;был обкурен, я&nbsp;не&nbsp;был пьян, я&nbsp;был
+                чистым!</p>
+              <p class="notes__date">17 апреля</p>
+              <p class="notes__link">
+                О побочных
+                <svg class="notes__arrow-list" width="15" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="opinions">
+        <h2 class="opinions__title">Мы&nbsp;изучаем и&nbsp;принимаем во внимание
+         <br>все мнения ведущих специалистов отрасли</h2>
+          <div class="opinions__wrapper">
+            <div class="opinions__buttons">
+              <button class="opinions__button opinions__button--left" type="button">
+                <svg class="opinions__arrow" width="22" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+              <button class="opinions__button opinions__button--right" type="button">
+                <svg class="opinions__arrow" width="22" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="opinions__text">Мнения специалистов</p>
+          </div>
+          <ul class="opinions__list" id="opinions__list">
+            <li class="opinions__item opinions__item--first">
+              <p class="opinions__header">
+                Эдди<br>морро
+                <img class="opinions__image" src="img/opinions.png" alt="Эдди" width="89" height="89">
+              </p>
+              <p class="opinions__merit">Сенатор, заслуженный деятель науки РФ, профессор, доктор медицинских наук, руководитель отдела патоморфологии ФГБНУ «НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+              <p class="opinions__description">Правовое государство фактически интегрирует культ личности. Социализм,
+                на первый взгляд, заставляет бесцветный культ личности.</p>
+              <p class="opinions__link">
+                Смотреть видео
+                <svg class="opinions__arrow-link" width="15" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </p>
+            </li>
+            <li class="opinions__item opinions__item--second">
+              <p class="opinions__header">
+                Эдди<br>морро
+                <img class="opinions__image" src="img/opinions.png" alt="Эдди" width="89" height="89">
+              </p>
+              <p class="opinions__merit">Сенатор, заслуженный деятель науки РФ, профессор, доктор медицинских наук, руководитель отдела патоморфологии ФГБНУ «НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+              <p class="opinions__description">Правовое государство фактически интегрирует культ личности. Социализм,
+                на первый взгляд, заставляет бесцветный культ личности.</p>
+              <p class="opinions__link">
+                Смотреть видео
+                <svg class="opinions__arrow-link" width="15" height="22">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </p>
+            </li>
+          </ul>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <h3 class="footer__title">Путь к богатству <br>и могуществу</h3>
+      <div class="footer__wrapper">
+        <p class="footer__copyright">© «NZT-48», 2022</p>
+        <p class="footer__personal">Согласие на обработку персональных данных</p>
+        <p class="footer__privace">Политика конфиденциальности</p>
+        <p class="footer__country">Тестовое задание от Country</p>
+      </div>
+    </div>
+  </footer>
 
-  </main>
-
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
   <script src="js/main.js"></script>
 </body>
 

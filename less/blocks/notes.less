@@ -23,6 +23,10 @@
   stroke: #2864B9;
 }
 
+.notes__buttons {
+  margin-bottom: 35px;
+}
+
 .notes__text {
   font-weight: 500;
   font-size: 18px;
@@ -41,6 +45,16 @@
   flex-direction: row;
   background: linear-gradient(0deg, rgba(9, 46, 98, 0.3) 0%, rgba(65, 124, 209, 0.3) 100%), #1E5AAF;
   border-radius: 5px 5px 5px 5px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.notes__item:hover {
+  box-shadow: inset 0px 550px 10px #092E624D, inset 0px 150px 10px #1E5AAF;
+  transition: 3s;
+}
+
+.notes__item:not(:hover) {
+  transition: 3s;
 }
 
 .notes__text-wrapper {

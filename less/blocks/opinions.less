@@ -51,10 +51,18 @@
 
 .opinions__item {
   padding: 61px 97px 64px 110px;
-  box-shadow: 0px 0px 10px rgba(6, 31, 67, 0.3);
   border-radius: 5px;
   min-width: 879px;
   min-height: 575px;
+}
+
+.opinions__item:hover {
+  box-shadow: inset 0px 575px 100px #092E624D, inset 0px 280px 100px #1E5AAF;
+  transition: 2s;
+}
+
+.opinions__item:not(:hover) {
+  transition: 2s;
 }
 
 .opinions__header {

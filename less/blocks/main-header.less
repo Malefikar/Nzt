@@ -1,5 +1,5 @@
 .main-header {
-  background-image: url("/img/main-header.png");
+  background-image: url("../img/main-header.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -32,4 +32,53 @@
   stroke: #FDFDFD;
   position: absolute;
   margin-left: 15px;
+}
+
+.main-header__container {
+  min-width: 1390px;
+}
+
+.main-header--padding {
+  padding-top: 240px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sticky .main-nav__logo {
+  fill: #1E5AAF;
+}
+
+.sticky.main-nav {
+  color: #252627;
+  background-color: #FFFFFF;
+}
+
+.sticky .main-nav__arrow {
+  stroke: #797A84;
+}
+
+.sticky .main-nav__search {
+  stroke: #797A84;
+}
+
+.sticky .main-nav__button--check {
+  color: #DF0050;
+}
+
+.sticky .main-nav__button--buy {
+  background-color: #0F57BE;
+  color: #FDFDFD;
+}
+
+.sticky .dropdown-content {
+  background: #FDFDFD;
+  margin-top: 30px;
+  padding-top: 40px;
 }
